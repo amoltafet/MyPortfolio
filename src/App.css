@@ -61,6 +61,29 @@ body {
   bottom: 0;
 }
 
+.icon:hover {
+  cursor: pointer;
+  margin-bottom: 1em;
+  transition: 250ms;
+}
+
+.info {
+  font-size: 0.9rem;
+  font-weight: 200;
+  position: fixed;
+  bottom: 0;
+  margin-left: 5em;
+}
+
+.info1 {
+  font-size: 0.9rem;
+  font-weight: 200;
+  position: fixed;
+  bottom: 0;
+  margin-left: 5em;
+  margin-bottom: 0.1em;
+}
+
 .btn-project {
     background-color: rgb(70, 185, 60);
     color: #fff;
@@ -128,15 +151,17 @@ p {
   border: #fff solid 1px;
   border-radius: 1em;
   text-align: left;
-  padding: 1rem;
-  width: 100%;
+  padding: 1em;
   height: 100%;
+  width: 31em;
+  margin: 1em;
 }
 
 .project-card:hover {
   background-color: white;
   color: #000;
-  transition: 250ms;
+  transition: 300ms;
+  padding: 2em;
 }
 
 .project-img {
