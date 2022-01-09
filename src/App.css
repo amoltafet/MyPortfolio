@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
+
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left {
+  padding: 2em;
+  position: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.right {
+  width: 100%;
+  padding-left: 22em;
+  padding-right: 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.name {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.mcol {
+  margin-left: 250px;
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.me {
+  background: url('./img/me.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 15em;
+  border: #fff solid 1px;
+  margin: 1rem;
+  margin-left: 5em;
+}
+
+.me:hover {
+  background: url('./img/me2.jpg');
+  background-size: cover;
+  transition: 300ms;
+}
+
+.social-icons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: fixed;
+  bottom: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-project {
+    background-color: rgb(70, 185, 60);
+    color: #fff;
+    border: rgb(70, 185, 60);
+    border-radius: 1em;
+    padding: .5em;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 0.5em;
+    margin-left: 5%;
+    width: 90%;
+  }
+  
+.btn-project:hover {
+    border:rgb(70, 185, 60) solid 1px;
+    background-color: white;
+    color: rgb(70, 185, 60);
+    transition: 250ms;
+    padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.line {
+  width: 2px;
+  height: 8rem;
+  background-color: #fff;
+}
+
+.icon {
+  color: rgb(70, 185, 60);
+}
+
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+p {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+
+.portfolio, .work, .skills, .education {
+  margin: 1rem;
+}
+
+
+.project-card {
+  background-color: transparent;
+  border: #fff solid 1px;
+  border-radius: 1em;
+  text-align: left;
+  padding: 1rem;
+}
+
+.project-card:hover {
+  background-color: white;
+  color: #000;
+  
+}
+
+.project-img {
+  width: 100%;
+  image-resolution: cover;
+  padding-bottom: .4em;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 0.2em;
+}
+
+.job-card {
+  background-color: transparent;
+  border: #fff solid 1px;
+  border-radius: 1em;
+  text-align: left;
+  padding: 1rem;
+  margin-bottom: 0.4em;
+}
+
+.job-card:hover {
+  background-color: white;
+  color: #000;
+  margin: 1em;
+  transition: 200ms;
+}
+
+.company-logo {
+  margin-left: 1em;
+  background-color: white;
+  width: 18rem;
+  height: 12rem;
+  image-resolution: cover;
+  padding-bottom: .4em;
+}
+
+.edu-card {
+  background-color: transparent;
+  border: #fff solid 1px;
+  border-radius: 1em;
+  text-align: left;
+  padding: 1rem;
+  margin-bottom: 0.4em;
+}
+
+.button {
+  background-color: rgb(70, 185, 60);
+  color: #fff;
+  border: none;
+  border-radius: 1em;
+  padding: .5em;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.5em;
+  width: 250px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.button:hover {
+  background-color: white;
+  color: rgb(70, 185, 60);
+  transition: 250ms;
+  padding: 1em;
+}
+
+.personal-info {
+   position: absolute;
+}
+
+.hero {
+  background: transparent;
+  width: 100%;
+  height: 100%;
 }
