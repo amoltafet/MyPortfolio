@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-import {Row, Col} from 'react-bootstrap'
 import LeftColumn from './LeftColumn';
 import RightColumn from './RightColumn';
 

@@ -1,8 +1,7 @@
 import React from "react";
-import me from './img/me.jpg';
 import * as AiIcons from 'react-icons/ai';
 import { IconContext } from "react-icons/lib";
-
+import resume from './resume.pdf';
 
 function LeftColumn() {
     return(
@@ -24,8 +23,13 @@ function LeftColumn() {
 function PersonalInfo() {
     return(
         <div className="personal-info">
-            <button className="button">Resume</button>
-            <button className="button">Contact Me</button>
+            <button className="button"
+            onClick={() => {
+                window.open(resume, '_blank'); }}>
+            Resume</button>
+            <button className="button"
+                
+            >Contact Me</button>
             <h5>email: moltafet.ahmad2015@gmail.com</h5>
             <h5>phone: (509) 992-9504</h5>
         </div>
