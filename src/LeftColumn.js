@@ -11,8 +11,14 @@ function LeftColumn() {
             <PersonalInfo />
             <div className="social-icons">
                 <IconContext.Provider value={{size: '1.5em', className: 'icon'}}>
-                <a href="https://www.linkedin.com/in/ahmad-moltafet-b8a8b8a4/"><AiIcons.AiFillLinkedin className="icon"/></a>
-                    <AiIcons.AiFillGithub  className="icon"/>
+                <AiIcons.AiFillLinkedin className="icon"
+                onClick={() => {
+                    window.open('https://www.linkedin.com/in/ahmad-moltafet-63b7b619a/', '_blank');
+                }}/>
+                    <AiIcons.AiFillGithub  className="icon"
+                    onClick={() => {
+                        window.open('https://github.com/amoltafet', '_blank');
+                    }}/>
                 </IconContext.Provider>    
                 <div className="line"/>
             </div>    
